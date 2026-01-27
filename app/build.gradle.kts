@@ -1,38 +1,22 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.mymovies.android.application.compose)
+    alias(libs.plugins.mymovies.jvm.ktor)
 }
 
 android {
     namespace = "com.example.mymovies"
-    compileSdk {
-        version = release(36)
-    }
 
     defaultConfig {
-        applicationId = "com.example.mymovies"
-        minSdk = 24
-        targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.feature.moviener.AndroidJUnitRunner"
-    }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary = true
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    buildFeatures {
-        compose = true
+
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }
 
