@@ -31,10 +31,12 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.androidx.work)
+    implementation(libs.kotlinx.serialization.json)
+
+    implementation(projects.core.data)
+    implementation(projects.core.domain)
+    implementation(projects.feature.movie.domain)
+    implementation(projects.feature.movie.database)
 }
