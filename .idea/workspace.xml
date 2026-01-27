@@ -5,102 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add the module structure">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/appInsightsSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/mymovies/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/mymovies/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/data/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/data/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/data/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/data/src/androidTest/java/com/example/core/data/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/data/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/data/src/test/java/com/example/core/data/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/domain/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/domain/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/domain/src/main/java/com/example/core/domain/MyClass.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/androidTest/java/com/example/core/presentation/designsystem/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/test/java/com/example/core/presentation/designsystem/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/ui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/ui/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/ui/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/ui/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/ui/src/androidTest/java/com/example/core/presentation/ui/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/ui/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/ui/src/test/java/com/example/core/presentation/ui/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/androidTest/java/com/example/movie/data/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/test/java/com/example/movie/data/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/database/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/database/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/database/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/database/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/database/src/androidTest/java/com/example/movie/database/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/database/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/database/src/test/java/com/example/movie/database/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/domain/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/domain/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/domain/src/main/java/com/example/movie/domain/MyClass.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/consumer-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/androidTest/java/com/example/movie/presentation/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/test/java/com/example/movie/presentation/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/data/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/domain/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/presentation/designsystem/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/designsystem/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/presentation/ui/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/ui/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/data/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/database/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/domain/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +29,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=/home/mohammad/.android/avd/Pixel_Tablet.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -184,10 +103,11 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
     "app.teamhub.selectedTeam": "https://github.com/MohammadAshrf/MyMovies",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Merging develop",
+    "git-widget-placeholder": "feature/setup-version-catalog",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/mohammad/StudioProjects/ChirpMaster"
   }
@@ -290,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769513817809</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add the module structure">
+      <option name="closed" value="true" />
+      <created>1769516270320</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769516270320</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
