@@ -1,7 +1,7 @@
 plugins {
-    id("java-library")
+    alias(libs.plugins.mymovies.jvm.library)
 }
 
-dependencies{
-
+dependencies {
+    implementation(libs.kotlinx.coroutines.core)
 }

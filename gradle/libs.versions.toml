@@ -1,5 +1,5 @@
 [versions]
-agp = "8.13.0"
+agp = "8.13.2"
 androidTools = "31.13.0"
 coreSplashscreen = "1.0.1"
 coilCompose = "2.7.0"
@@ -113,7 +113,7 @@ mymovies-android-library-compose = { id = "mymovies.android.library.compose", ve
 mymovies-android-feature-ui = { id = "mymovies.android.feature.ui", version = "unspecified" }
 mymovies-android-room = { id = "mymovies.android.room", version = "unspecified" }
 mymovies-jvm-library = { id = "mymovies.jvm.library", version = "unspecified" }
-mymovies-jvm-ktor = { id = "mymovies.jvm-ktor", version = "unspecified" }
+mymovies-jvm-ktor = { id = "mymovies.jvm.ktor", version = "unspecified" }
 
 [bundles]
 compose = [
@@ -133,7 +133,6 @@ koin = ["koin-core", "koin-android", "koin-android-workmanager"]
 koin-compose = ["koin-core", "koin-android", "koin-android-workmanager", "koin-androidx-compose"]
 ktor = [
     "ktor-client-auth",
-    "ktor-client-okhttp",
     "ktor-client-content-negotiation",
     "ktor-client-core",
     "ktor-client-logging",

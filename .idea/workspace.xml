@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add the version catalog setup">
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/domain/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/presentation/designsystem/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/designsystem/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/presentation/ui/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/ui/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/database/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/domain/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-    </list>
+    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add build gradle relations setup" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/setup-the-module-structure" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -110,11 +90,18 @@
     "app.teamhub.selectedTeam": "https://github.com/MohammadAshrf/MyMovies",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Merging develop",
+    "git-widget-placeholder": "feature/setup-build-logic",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mohammad/StudioProjects/ChirpMaster"
+    "last_opened_file_path": "/home/mohammad/AndroidStudioProjects/MyMovies/build-logic/convention/src/main/java/com/example/convention"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build-logic/convention/src/main/java/com/example/convention" />
+      <recent name="$PROJECT_DIR$/build-logic/convention/src/main/java" />
+      <recent name="$PROJECT_DIR$/build-logic" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="MyMovies.app" />
@@ -237,7 +224,31 @@
       <option name="project" value="LOCAL" />
       <updated>1769526054474</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge branch 'feature/setup-version-catalog' into develop&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.&#10;defining the module relations">
+      <option name="closed" value="true" />
+      <created>1769526162823</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1769526162823</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add build logic &amp; convention plugins">
+      <option name="closed" value="true" />
+      <created>1769552757803</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1769552757803</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add build gradle relations setup">
+      <option name="closed" value="true" />
+      <created>1769552808431</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1769552808431</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,7 +265,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add the module structure" />
     <MESSAGE value="add the version catalog setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the version catalog setup" />
+    <MESSAGE value="Merge branch 'feature/setup-version-catalog' into develop&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.&#10;defining the module relations" />
+    <MESSAGE value="add build logic &amp; convention plugins" />
+    <MESSAGE value="add build gradle relations setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="add build gradle relations setup" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
