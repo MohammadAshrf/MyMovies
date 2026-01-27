@@ -4,22 +4,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add the module structure">
+    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add the version catalog setup">
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/data/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/domain/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/presentation/designsystem/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/designsystem/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/presentation/ui/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/ui/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature/movie/data/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature/movie/database/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature/movie/domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/domain/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature/movie/presentation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +99,6 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "android.gradle.sync.needed": "true",
     "app.teamhub.selectedTeam": "https://github.com/MohammadAshrf/MyMovies",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
@@ -218,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769516270320</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add the version catalog setup">
+      <option name="closed" value="true" />
+      <created>1769522662632</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769522662632</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,7 +237,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add the module structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the module structure" />
+    <MESSAGE value="add the version catalog setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="add the version catalog setup" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
