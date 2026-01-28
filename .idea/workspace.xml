@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add result wrapper class for error handling" />
+    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add ui text extension function">
+      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/Theme.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/color/Color.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/color/DarkThemeColor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/color/LightThemeColor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util/ObserveAsEvents.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,13 +46,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/string-resource-management" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -97,20 +104,24 @@
     "app.teamhub.selectedTeam": "https://github.com/MohammadAshrf/MyMovies",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature/one-time-events",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mohammad/AndroidStudioProjects/MyMovies/core/domain/src/main/java/com/example/core/domain/util"
+    "last_opened_file_path": "/home/mohammad/AndroidStudioProjects/MyMovies/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/color"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/color" />
+      <recent name="$PROJECT_DIR$/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util" />
       <recent name="$PROJECT_DIR$/core/domain/src/main/java/com/example/core/domain/util" />
       <recent name="$PROJECT_DIR$/build-logic/convention/src/main/java/com/example/convention" />
       <recent name="$PROJECT_DIR$/build-logic/convention/src/main/java" />
-      <recent name="$PROJECT_DIR$/build-logic" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.example.core.domain.util" />
+    </key>
+    <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
+      <recent name="com.example.core.presentation.designsystem.color" />
     </key>
   </component>
   <component name="RunManager">
@@ -283,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769555867687</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add ui text extension function">
+      <option name="closed" value="true" />
+      <created>1769591894578</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1769591894578</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,7 +336,8 @@
     <MESSAGE value="add build gradle relations setup" />
     <MESSAGE value="Merge branch 'feature/setup-build-logic' into develop" />
     <MESSAGE value="add result wrapper class for error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="add result wrapper class for error handling" />
+    <MESSAGE value="add ui text extension function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ui text extension function" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
