@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add result wrapper class for error handling">
-      <change afterPath="$PROJECT_DIR$/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util/UiText.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util/DataErrorToText.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/presentation/ui/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Interface" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -102,11 +104,12 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "feature/string-resource-management",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mohammad/AndroidStudioProjects/MyMovies/core/domain/src/main/java/com/example/core/domain/util"
+    "last_opened_file_path": "/home/mohammad/AndroidStudioProjects/MyMovies/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util" />
       <recent name="$PROJECT_DIR$/core/domain/src/main/java/com/example/core/domain/util" />
       <recent name="$PROJECT_DIR$/build-logic/convention/src/main/java/com/example/convention" />
       <recent name="$PROJECT_DIR$/build-logic/convention/src/main/java" />
