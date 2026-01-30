@@ -10,3 +10,6 @@ val ArrowLeftIcon: ImageVector
 val LogoIcon: ImageVector
     @Composable
     get() = ImageVector.vectorResource(R.drawable.logo)
+val SearchIcon: ImageVector
+    @Composable
+    get() = ImageVector.vectorResource(R.drawable.search)
