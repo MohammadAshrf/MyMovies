@@ -9,6 +9,7 @@ android {
 dependencies {
     implementation(libs.coil.compose)
     implementation(libs.androidx.activity.compose)
+    implementation(libs.kotlinx.serialization.json)
     implementation(libs.timber)
 
     implementation(projects.core.domain)
