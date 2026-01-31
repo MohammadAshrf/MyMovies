@@ -47,7 +47,7 @@ fun MovieListRoot(
             is MovieListEvent.OnMovieClick -> onMovieClick(event.movieId)
             MovieListEvent.OnSearchClick -> onSearchClick()
             is MovieListEvent.OnError -> {
-                // Handle Error (Snackbar)
+                // Handle Error
             }
         }
     }
@@ -96,24 +96,20 @@ fun MovieListScreen(
             contentAlignment = Alignment.Center
         ) {
             when {
-                // 1. Loading Initial
                 state.isLoading -> {
                     CircularProgressIndicator(
                         color = MaterialTheme.colorScheme.primary
                     )
                 }
 
-                // 2. Error Initial (Empty List)
                 state.error != null && state.movies.isEmpty() -> {
                     Text(
                         text = state.error.asString(),
                         color = MaterialTheme.colorScheme.error,
                         modifier = Modifier.padding(16.dp)
                     )
-                    // يفضل إضافة زرار Retry هنا
                 }
 
-                // 3. Success (List)
                 else -> {
                     MoviesList(
                         movies = state.movies,
@@ -126,7 +122,6 @@ fun MovieListScreen(
                         onRetryPaginationClick = {
                             onAction(MovieListAction.OnRetryPaginationClick)
                         },
-                        // ✅ الربط المهم جداً مع الـ ViewModel
                         onLoadMore = {
                             onAction(MovieListAction.OnLoadMore)
                         },

@@ -66,7 +66,6 @@ class MovieListViewModel : ViewModel() {
         viewModelScope.launch {
             _state.update { it.copy(isLoading = true, error = null) }
 
-            // محاكاة Network Delay
             delay(1500)
 
             val dummyMovies = generateDummyMovies(1)
@@ -83,7 +82,6 @@ class MovieListViewModel : ViewModel() {
     }
 
     private fun loadNextPage() {
-        // لو بنحمل أصلاً أو وصلنا للنهاية، لا تفعل شيئاً
         if (_state.value.isPaginationLoading || _state.value.endReached) return
 
         viewModelScope.launch {
@@ -94,7 +92,6 @@ class MovieListViewModel : ViewModel() {
             val nextPage = _state.value.page + 1
             val newMovies = generateDummyMovies(nextPage)
 
-            // هنوقف لما نوصل للصفحة 5 (كمحاكاة للنهاية)
             val endReached = nextPage >= 5
 
             _state.update {
@@ -108,7 +105,6 @@ class MovieListViewModel : ViewModel() {
         }
     }
 
-    // دالة مساعدة لتوليد داتا وهمية
     private fun generateDummyMovies(page: Int): List<MovieUi> {
         val startId = (page - 1) * 20
         return List(20) { index ->

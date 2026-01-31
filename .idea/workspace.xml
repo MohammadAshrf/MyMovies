@@ -32,33 +32,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add serialization dependency">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/MyMoviesApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/di/initKoin.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/navigation/NavigationRoot.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/di/MoviePresentationModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/navigation/MovieGraphRoutes.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/navigation/movieGraph.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidApplicationComposeConventionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidApplicationComposeConventionPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidApplicationConventionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidApplicationConventionPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidFeatureUiConventionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidFeatureUiConventionPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidLibraryComposeConventionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidLibraryComposeConventionPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidLibraryConventionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidLibraryConventionPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidRoomConventionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/java/AndroidRoomConventionPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/java/JvmKtorConventionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/java/JvmKtorConventionPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/java/JvmLibraryConventionPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/java/JvmLibraryConventionPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListViewModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,23 +127,23 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.app.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "app.teamhub.selectedTeam": "https://github.com/MohammadAshrf/MyMovies",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "feature/movie-list-navigation",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mohammad/AndroidStudioProjects/MyMovies/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;app.teamhub.selectedTeam&quot;: &quot;https://github.com/MohammadAshrf/MyMovies&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/movie-list-navigation&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mohammad/AndroidStudioProjects/MyMovies/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util" />
