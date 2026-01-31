@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.mymovies.android.library)
+    alias(libs.plugins.mymovies.android.room)
 }
 
 android {
