@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.core.presentation.designsystem.LogoIcon
 import com.example.core.presentation.designsystem.MyMoviesTheme
+import com.example.movie.presentation.movie_list.MovieListRoot
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,12 +25,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MyMoviesTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background,
-                ){
-
-                }
+                MovieListRoot(
+                    onNavigateToDetail = {},
+                    onNavigateToSearch = {}
+                )
             }
         }
     }

@@ -13,3 +13,7 @@ val LogoIcon: ImageVector
 val SearchIcon: ImageVector
     @Composable
     get() = ImageVector.vectorResource(R.drawable.search)
+
+val StarIcon: ImageVector
+    @Composable
+    get() = ImageVector.vectorResource(R.drawable.star)
