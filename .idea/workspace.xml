@@ -32,27 +32,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add result wrapper class for error handling">
-      <change afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/main/res/drawable/star.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util/ObserveAsEvents.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/model/MovieUi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MovieListItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MoviesList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/PaginationScrollListener.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/navigation/MovieGraphRoutes.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/Icons.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/Icons.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListEvent.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListState.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListViewModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +51,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PhysicalDevice::serial=23021FDEE003S1]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=/home/mohammad/.android/avd/Pixel_Tablet.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -158,7 +146,7 @@
     "app.teamhub.selectedTeam": "https://github.com/MohammadAshrf/MyMovies",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "movie-list-screen-ui",
+    "git-widget-placeholder": "feature/movie-list-navigation",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/mohammad/AndroidStudioProjects/MyMovies/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util"
   }

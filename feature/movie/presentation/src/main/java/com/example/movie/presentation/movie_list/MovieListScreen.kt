@@ -20,7 +20,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -37,20 +36,16 @@ import org.koin.androidx.compose.koinViewModel
 
 @Composable
 fun MovieListRoot(
-    onNavigateToDetail: (Int) -> Unit, // Callback للشاشة اللي بعدها
-    onNavigateToSearch: () -> Unit,
+    onMovieClick: (Int) -> Unit,
+    onSearchClick: () -> Unit,
     viewModel: MovieListViewModel = koinViewModel()
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle()
 
     ObserveAsEvents(viewModel.events) { event ->
-        when(event) {
-            is MovieListEvent.NavigateToDetail -> {
-                onNavigateToDetail(event.movieId)
-            }
-            MovieListEvent.NavigateToSearch -> {
-                onNavigateToSearch()
-            }
+        when (event) {
+            is MovieListEvent.OnMovieClick -> onMovieClick(event.movieId)
+            MovieListEvent.OnSearchClick -> onSearchClick()
             is MovieListEvent.OnError -> {
                 // Handle Error (Snackbar)
             }

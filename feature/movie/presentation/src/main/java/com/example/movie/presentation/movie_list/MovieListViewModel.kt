@@ -38,13 +38,13 @@ class MovieListViewModel : ViewModel() {
         when (action) {
             is MovieListAction.OnMovieClick -> {
                 viewModelScope.launch {
-                    _events.send(MovieListEvent.NavigateToDetail(action.movie.id))
+                    _events.send(MovieListEvent.OnMovieClick(action.movie.id))
                 }
             }
 
             MovieListAction.OnSearchClick -> {
                 viewModelScope.launch {
-                    _events.send(MovieListEvent.NavigateToSearch)
+                    _events.send(MovieListEvent.OnSearchClick)
                 }
             }
 
