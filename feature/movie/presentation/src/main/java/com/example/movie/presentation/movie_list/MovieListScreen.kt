@@ -140,7 +140,7 @@ private fun Preview() {
         MovieListScreen(
             state = MovieListState(
                 movies = List(6) {
-                    MovieUi(it, "Movie Preview $it", null, "2023", 8.5)
+                    MovieUi(it, "Movie Preview $it", null, "2023", "8.5")
                 }
             ),
             onAction = {}

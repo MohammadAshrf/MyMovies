@@ -8,7 +8,7 @@ data class MovieEntity(
     @PrimaryKey
     val id: Int,
     val title: String,
-    val overview: String,
+    val overview: String?,
     val posterPath: String?,
     val backdropPath: String?,
     val releaseDate: String?,

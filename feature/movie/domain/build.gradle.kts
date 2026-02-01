@@ -4,5 +4,6 @@ plugins {
 
 dependencies {
     implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.paging.compose)
     implementation(projects.core.domain)
 }
