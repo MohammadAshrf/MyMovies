@@ -1,8 +1,10 @@
 package com.example.movie.data.di
 
-import com.example.movie.data.chat.KtorMovieService
+import com.example.movie.data.movie.KtorMovieService
+import com.example.movie.data.movie.OfflineFirstMovieRepository
 import com.example.movie.database.DatabaseFactory
 import com.example.movie.database.MyMoviesDatabase
+import com.example.movie.domain.movie.MovieRepository
 import com.example.movie.domain.movie.MovieService
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.module.dsl.singleOf
@@ -20,4 +22,5 @@ val movieDataModule = module {
     single { get<MyMoviesDatabase>().movieDao }
     single { get<MyMoviesDatabase>().movieRemoteKeysDao }
     singleOf(::KtorMovieService).bind<MovieService>()
+    singleOf(::OfflineFirstMovieRepository).bind<MovieRepository>()
 }

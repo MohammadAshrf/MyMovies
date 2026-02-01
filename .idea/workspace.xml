@@ -31,21 +31,25 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add and refine some dependencies">
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/chat/KtorMovieService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/dto/ChatDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/dto/response/MoviesResponseDto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/mapper/MovieMapper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/domain/src/main/java/com/example/movie/domain/model/Movie.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/domain/src/main/java/com/example/movie/domain/movie/MovieService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/mapper/MovieMapper.kt" afterDir="false" />
+    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="edit rating string">
+      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/OfflineFirstMovieRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/paging/MovieRemoteMediator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/paging/SearchPagingSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/movie/domain/src/main/java/com/example/movie/domain/movie/MovieRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/chat/KtorMovieService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/KtorMovieService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/di/MovieDataModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/di/MovieDataModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/domain/src/main/java/com/example/movie/domain/MyClass.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/model/MovieUi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/model/MovieUi.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MovieListItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MovieListItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MoviesList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MoviesList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/mapper/MovieMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/mapper/MovieMapper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/dao/MovieDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/dao/MovieDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/entities/MovieEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/entities/MovieEntity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature/movie/domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/domain/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,9 +90,9 @@
         <option value="Compose UI Screen with ViewModel.kt.child.1" />
         <option value="Compose UI Screen with ViewModel" />
         <option value="valueResourceFile" />
-        <option value="Kotlin Interface" />
         <option value="Kotlin File" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -152,7 +156,7 @@
     &quot;app.teamhub.selectedTeam&quot;: &quot;https://github.com/MohammadAshrf/MyMovies&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/movie-remote-service&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/movie-caching-offline-first&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/mohammad/AndroidStudioProjects/MyMovies/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util&quot;
   }
@@ -175,6 +179,7 @@
       <recent name="com.example.core.domain.util" />
     </key>
     <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
+      <recent name="com.example.movie.data.paging" />
       <recent name="com.example.movie.domain.movie" />
       <recent name="com.example.core.presentation.designsystem" />
     </key>
@@ -397,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769923926721</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="edit rating string">
+      <option name="closed" value="true" />
+      <created>1769938965626</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1769938965626</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,7 +450,8 @@
     <MESSAGE value="add room plugin" />
     <MESSAGE value="add database schema setup" />
     <MESSAGE value="add and refine some dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="add and refine some dependencies" />
+    <MESSAGE value="edit rating string" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit rating string" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
@@ -459,7 +473,7 @@
         </entry>
         <entry key="com.example.movie.data.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1769513633233" />
+            <CheckInfo lastCheckTimestamp="1769945010097" />
           </value>
         </entry>
         <entry key="com.example.movie.database.test">
