@@ -1,4 +1,4 @@
-package com.example.movie.data.chat
+package com.example.movie.data.movie
 
 import com.example.core.data.networking.get
 import com.example.core.domain.util.DataError
