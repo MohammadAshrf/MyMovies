@@ -114,7 +114,7 @@ class MovieListViewModel : ViewModel() {
                 title = "Movie Title $id (Page $page)",
                 posterUrl = null,
                 releaseYear = "202${id % 5}",
-                rating = 5.0 + (id % 50) / 10.0,
+                rating = "9.5",
             )
         }
     }
