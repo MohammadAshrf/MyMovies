@@ -104,7 +104,7 @@ private val dummyMovies = List(6) { index ->
         title = "Movie Title ${index + 1}",
         posterUrl = null,
         releaseYear = "202${index}",
-        rating = 8.5 + (index * 0.2),
+        rating = "8.5",
     )
 }
 
