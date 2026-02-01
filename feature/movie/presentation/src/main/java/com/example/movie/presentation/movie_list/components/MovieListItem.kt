@@ -81,7 +81,7 @@ fun MovieListItem(
                         modifier = Modifier.size(12.dp)
                     )
                     Text(
-                        text = movie.rating.toString(),
+                        text = movie.rating,
                         style = MaterialTheme.typography.labelSmall,
                         color = Color.White
                     )
@@ -142,7 +142,7 @@ private fun MovieItemPreview() {
                     title = "Harry Potter and the Philosopher's Stone",
                     posterUrl = "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
                     releaseYear = "2001",
-                    rating = 9.5,
+                    rating = "9.5",
                 ),
                 onMovieClick = {}
             )
