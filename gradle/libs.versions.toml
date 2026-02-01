@@ -21,6 +21,7 @@ securityCryptoKtx = "1.1.0-alpha06"
 timber = "5.0.1"
 ksp = "2.2.10-2.0.2"
 room = "2.8.4"
+paging = "3.4.0"
 appcompat = "1.6.1"
 material = "1.11.0"
 org-jetbrains-kotlin-jvm = "2.2.10"
@@ -83,6 +84,11 @@ ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-paging = { group = "androidx.room", name = "room-paging", version.ref = "room" }
+
+# Pagination
+paging-runtime = { group = "androidx.paging", name = "paging-runtime", version.ref = "paging" }
+paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "paging" }
 
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }

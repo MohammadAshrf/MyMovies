@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.mymovies.android.library)
+    alias(libs.plugins.mymovies.jvm.ktor)
+    alias(libs.plugins.mymovies.android.room)
 }
 
 android {
@@ -7,11 +9,7 @@ android {
 }
 
 dependencies {
-    implementation(libs.kotlinx.coroutines.core)
-    implementation(libs.androidx.work)
-    implementation(libs.koin.android.workmanager)
-    implementation(libs.kotlinx.serialization.json)
-    implementation(libs.bundles.ktor)
+    implementation(libs.koin.android)
 
     implementation(projects.core.data)
     implementation(projects.core.domain)
