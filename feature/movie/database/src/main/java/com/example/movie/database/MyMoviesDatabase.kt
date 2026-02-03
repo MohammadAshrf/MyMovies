@@ -12,7 +12,7 @@ import com.example.movie.database.entities.MovieRemoteKeys
         MovieEntity::class,
         MovieRemoteKeys::class
     ],
-    version = 1,
+    version = 7,
     exportSchema = false
 )
 abstract class MyMoviesDatabase : RoomDatabase() {
