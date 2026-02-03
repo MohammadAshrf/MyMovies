@@ -1,12 +1,10 @@
 package com.example.movie.presentation.navigation
 
 
-import androidx.compose.material3.Text
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
-import androidx.navigation.toRoute
 import com.example.movie.presentation.movie_list.MovieListRoot
 
 fun NavGraphBuilder.moviesGraph(
@@ -24,15 +22,6 @@ fun NavGraphBuilder.moviesGraph(
                     navController.navigate(MovieGraphRoutes.Search)
                 }
             )
-        }
-
-        composable<MovieGraphRoutes.MovieDetail> { backStackEntry ->
-            val args = backStackEntry.toRoute<MovieGraphRoutes.MovieDetail>()
-            Text("Details Screen for Movie ID: ${args.movieId}")
-        }
-
-        composable<MovieGraphRoutes.Search> {
-            Text("Search Screen")
         }
     }
 }
