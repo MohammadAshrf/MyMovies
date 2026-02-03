@@ -11,6 +11,7 @@ import androidx.compose.foundation.lazy.grid.rememberLazyGridState
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.SnackbarDuration
 import androidx.compose.material3.SnackbarHost
 import androidx.compose.material3.SnackbarHostState
 import androidx.compose.material3.TopAppBarDefaults
@@ -19,6 +20,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
@@ -42,6 +44,7 @@ import com.example.movie.presentation.model.MovieUi
 import com.example.movie.presentation.movie_list.components.MoviesList
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.flowOf
+import kotlinx.coroutines.launch
 import org.koin.androidx.compose.koinViewModel
 
 @Composable
@@ -54,6 +57,7 @@ fun MovieListRoot(
     val movies = viewModel.moviePagingFlow.collectAsLazyPagingItems()
     val snackbarHostState = remember { SnackbarHostState() }
     val context = LocalContext.current
+    val scope = rememberCoroutineScope()
 
     LaunchedEffect(Unit) {
         snapshotFlow { movies.loadState }
@@ -77,11 +81,14 @@ fun MovieListRoot(
             is MovieListEvent.OnMovieClick -> onMovieClick(event.movieId)
             MovieListEvent.OnSearchClick -> onSearchClick()
             is MovieListEvent.OnError -> {
-                snackbarHostState.currentSnackbarData?.dismiss()
-                snackbarHostState.showSnackbar(
-                    event.error.asString(context),
-                    withDismissAction = true
-                )
+                scope.launch {
+                    snackbarHostState.currentSnackbarData?.dismiss()
+                    snackbarHostState.showSnackbar(
+                        message = event.error.asString(context),
+                        withDismissAction = true,
+                        duration = SnackbarDuration.Short
+                    )
+                }
             }
         }
     }
