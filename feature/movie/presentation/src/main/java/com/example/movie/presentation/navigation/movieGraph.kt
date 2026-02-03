@@ -5,6 +5,8 @@ import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
+import androidx.navigation.toRoute
+import com.example.movie.presentation.movie_detail.MovieDetailRoot
 import com.example.movie.presentation.movie_list.MovieListRoot
 
 fun NavGraphBuilder.moviesGraph(
@@ -20,6 +22,17 @@ fun NavGraphBuilder.moviesGraph(
                 },
                 onSearchClick = {
                     navController.navigate(MovieGraphRoutes.Search)
+                }
+            )
+        }
+
+        composable<MovieGraphRoutes.MovieDetail> { backStackEntry ->
+            val args = backStackEntry.toRoute<MovieGraphRoutes.MovieDetail>()
+
+            MovieDetailRoot(
+                movieId = args.movieId,
+                onBackClick = {
+                    navController.navigateUp()
                 }
             )
         }
