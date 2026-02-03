@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="movies">Movies</string>
+    <string name="retry">Retry</string>
+    <string name="no_movies_found">No movies found!</string>
 </resources>
