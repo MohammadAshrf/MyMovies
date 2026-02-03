@@ -54,11 +54,11 @@ import com.example.core.presentation.designsystem.toolbar.ToolbarNavIcon
 @Composable
 fun MoviesToolbar(
     title: String,
-    isSearchActive: Boolean,
-    searchQuery: String,
-    onSearchQueryChange: (String) -> Unit,
-    onToggleSearch: () -> Unit,
     modifier: Modifier = Modifier,
+    isSearchActive: Boolean = false,
+    searchQuery: String = "",
+    onSearchQueryChange: (String) -> Unit = {},
+    onToggleSearch: () -> Unit = {},
     navIcons: Set<ToolbarNavIcon> = emptySet(),
     onBackClick: () -> Unit = {},
     scrollBehavior: TopAppBarScrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior(),
@@ -88,7 +88,7 @@ fun MoviesToolbar(
             if (ToolbarNavIcon.BACK in navIcons && !isSearchActive) {
                 CircleIconButton(
                     icon = ArrowLeftIcon,
-                    modifier = Modifier.padding(8.dp),
+                    modifier = Modifier.padding(start = 8.dp),
                     onClick = onBackClick
                 )
             }
