@@ -51,55 +51,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="Merge branch 'feature/movie-caching-offline-first' into develop">
-      <change afterPath="$PROJECT_DIR$/core/data/src/main/java/com/example/core/data/di/CoreDataModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/domain/src/main/java/com/example/core/domain/util/DataErrorException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/ParamsConstant.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/domain/src/main/java/com/example/movie/domain/model/PagedMovies.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/ShimmerMovieItem.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/res/drawable/empty_brain.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/res/drawable/empty_place_holder.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/res/drawable/network_error.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/MyMoviesApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/MyMoviesApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/di/initKoin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovies/di/initKoin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/java/com/example/convention/BuildTypes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/java/com/example/convention/BuildTypes.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build-logic/convention/src/main/java/com/example/convention/ComposeDependencies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build-logic/convention/src/main/java/com/example/convention/ComposeDependencies.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/data/src/main/java/com/example/core/data/networking/HttpClientFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/data/src/main/java/com/example/core/data/networking/HttpClientFactory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/domain/src/main/java/com/example/core/domain/MyClass.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/components/CircleIconButton.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/components/CircleIconButton.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/components/MoviesScaffold.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/components/MoviesScaffold.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/components/MoviesToolbar.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/components/MoviesToolbar.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util/UiText.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util/UiText.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/dto/ChatDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/dto/MovieDto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/mapper/MovieMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/mapper/MovieMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/KtorMovieService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/KtorMovieService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/OfflineFirstMovieRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/OfflineFirstMovieRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/paging/MovieRemoteMediator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/paging/MovieRemoteMediator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/paging/SearchPagingSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/paging/SearchPagingSource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/MyMoviesDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/MyMoviesDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/dao/MovieDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/dao/MovieDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/domain/src/main/java/com/example/movie/domain/movie/MovieService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/domain/src/main/java/com/example/movie/domain/movie/MovieService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListAction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListState.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListState.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MovieListItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MovieListItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MoviesList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MoviesList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/PaginationScrollListener.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/navigation/movieGraph.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/navigation/movieGraph.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-    </list>
+    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="Add upgrade version to some libraries" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -528,7 +480,159 @@
       <option name="project" value="LOCAL" />
       <updated>1769951609242</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Add my api access token">
+      <option name="closed" value="true" />
+      <created>1770082312839</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082312839</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add my api access token">
+      <option name="closed" value="true" />
+      <created>1770082379794</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082379794</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add internet permission">
+      <option name="closed" value="true" />
+      <created>1770082394120</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082394120</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Add paging dependencies">
+      <option name="closed" value="true" />
+      <created>1770082410355</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082410355</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add access token to http client factory">
+      <option name="closed" value="true" />
+      <created>1770082463606</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082463606</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add paging remote mediator">
+      <option name="closed" value="true" />
+      <created>1770082671461</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082671461</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add search paging source">
+      <option name="closed" value="true" />
+      <created>1770082697021</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082697021</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Add error handling &amp; convert throwable to ui text">
+      <option name="closed" value="true" />
+      <created>1770082775668</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082775668</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add debugging tree with timber">
+      <option name="closed" value="true" />
+      <created>1770082816695</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082816695</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Add movie data models &amp; mappers">
+      <option name="closed" value="true" />
+      <created>1770082915890</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082915890</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add movies remote data source">
+      <option name="closed" value="true" />
+      <created>1770083071332</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083071332</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Add movies repository impl">
+      <option name="closed" value="true" />
+      <created>1770083169910</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083169910</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add core data module di">
+      <option name="closed" value="true" />
+      <created>1770083192674</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083192675</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Add base components setup">
+      <option name="closed" value="true" />
+      <created>1770083327499</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083327499</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Add base components setup">
+      <option name="closed" value="true" />
+      <created>1770083331493</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083331493</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Add movie components setup">
+      <option name="closed" value="true" />
+      <created>1770083669901</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083669901</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Add movie presentation logic">
+      <option name="closed" value="true" />
+      <created>1770083871073</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083871073</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Add movie's navigation graph">
+      <option name="closed" value="true" />
+      <created>1770083933669</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083933669</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Add upgrade version to some libraries">
+      <option name="closed" value="true" />
+      <created>1770084008760</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1770084008760</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -555,20 +659,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add the module structure" />
-    <MESSAGE value="add the version catalog setup" />
-    <MESSAGE value="Merge branch 'feature/setup-version-catalog' into develop&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.&#10;defining the module relations" />
-    <MESSAGE value="add build logic &amp; convention plugins" />
-    <MESSAGE value="add build gradle relations setup" />
-    <MESSAGE value="Merge branch 'feature/setup-build-logic' into develop" />
-    <MESSAGE value="add result wrapper class for error handling" />
-    <MESSAGE value="add http client handling" />
-    <MESSAGE value="edit some naming convention" />
-    <MESSAGE value="add serialization dependency" />
-    <MESSAGE value="add room plugin" />
-    <MESSAGE value="add database schema setup" />
-    <MESSAGE value="add and refine some dependencies" />
-    <MESSAGE value="edit rating string" />
     <MESSAGE value="add paging dependency" />
     <MESSAGE value="add movie entity mapper" />
     <MESSAGE value="add the movie remote mediator" />
@@ -577,7 +667,24 @@
     <MESSAGE value="add search pager source" />
     <MESSAGE value="add movie repo injection" />
     <MESSAGE value="Merge branch 'feature/movie-caching-offline-first' into develop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'feature/movie-caching-offline-first' into develop" />
+    <MESSAGE value="Add my api access token" />
+    <MESSAGE value="Add internet permission" />
+    <MESSAGE value="Add paging dependencies" />
+    <MESSAGE value="Add access token to http client factory" />
+    <MESSAGE value="Add paging remote mediator" />
+    <MESSAGE value="Add search paging source" />
+    <MESSAGE value="Add error handling &amp; convert throwable to ui text" />
+    <MESSAGE value="Add debugging tree with timber" />
+    <MESSAGE value="Add movie data models &amp; mappers" />
+    <MESSAGE value="Add movies remote data source" />
+    <MESSAGE value="Add movies repository impl" />
+    <MESSAGE value="Add core data module di" />
+    <MESSAGE value="Add base components setup" />
+    <MESSAGE value="Add movie components setup" />
+    <MESSAGE value="Add movie presentation logic" />
+    <MESSAGE value="Add movie's navigation graph" />
+    <MESSAGE value="Add upgrade version to some libraries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add upgrade version to some libraries" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
