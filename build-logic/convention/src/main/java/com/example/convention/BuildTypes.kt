@@ -18,15 +18,16 @@ internal fun Project.configureBuildTypes(
         }
 
         val apiKey = gradleLocalProperties(rootDir, rootProject.providers).getProperty("API_KEY")
+        val apiAccessToken = gradleLocalProperties(rootDir, rootProject.providers).getProperty("API_ACCESS_TOKEN")
         when (extensionType) {
             ExtensionType.APPLICATION -> {
                 extensions.configure<ApplicationExtension> {
                     buildTypes {
                         debug {
-                            configureDebugBuildType(apiKey)
+                            configureDebugBuildType(apiKey, apiAccessToken)
                         }
                         release {
-                            configureReleaseBuildType(commonExtension, apiKey)
+                            configureReleaseBuildType(commonExtension, apiKey, apiAccessToken)
                         }
                     }
                 }
@@ -36,10 +37,10 @@ internal fun Project.configureBuildTypes(
                 extensions.configure<LibraryExtension> {
                     buildTypes {
                         debug {
-                            configureDebugBuildType(apiKey)
+                            configureDebugBuildType(apiKey, apiAccessToken)
                         }
                         release {
-                            configureReleaseBuildType(commonExtension, apiKey)
+                            configureReleaseBuildType(commonExtension, apiKey, apiAccessToken)
                         }
                     }
                 }
@@ -48,18 +49,21 @@ internal fun Project.configureBuildTypes(
     }
 }
 
-private fun BuildType.configureDebugBuildType(apiKey: String) {
+private fun BuildType.configureDebugBuildType(apiKey: String, apiAccessToken: String) {
     buildConfigField("String", "API_KEY", "\"$apiKey\"")
-    buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
+    buildConfigField("String", "API_ACCESS_TOKEN", "\"$apiAccessToken\"")
+    buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3\"")
     buildConfigField("String", "IMAGE_BASE_URL", "\"https://image.tmdb.org/t/p/w500/\"")
 }
 
 private fun BuildType.configureReleaseBuildType(
     commonExtension: CommonExtension<*, *, *, *, *, *>,
-    apiKey: String
+    apiKey: String,
+    apiAccessToken: String
 ) {
     buildConfigField("String", "API_KEY", "\"$apiKey\"")
-    buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
+    buildConfigField("String", "API_ACCESS_TOKEN", "\"$apiAccessToken\"")
+    buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3\"")
     buildConfigField("String", "IMAGE_BASE_URL", "\"https://image.tmdb.org/t/p/w500/\"")
 
     isMinifyEnabled = true
