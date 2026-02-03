@@ -18,8 +18,12 @@ import com.example.movie.domain.movie.MovieService
 
 class MovieRemoteMediator(
     private val db: MyMoviesDatabase,
-    private val service: MovieService
+    private val service: MovieService,
 ) : RemoteMediator<Int, MovieEntity>() {
+
+    override suspend fun initialize(): InitializeAction {
+        return InitializeAction.LAUNCH_INITIAL_REFRESH
+    }
 
     override suspend fun load(
         loadType: LoadType,
@@ -72,8 +76,14 @@ class MovieRemoteMediator(
                             )
                         }
 
+                        val startingIndex = (page - 1) * 10000
+
+                        val movieEntities = movies.mapIndexed { index, movieDto ->
+                            movieDto.toEntity(orderIndex = startingIndex + index)
+                        }
+
                         db.movieRemoteKeysDao.upsertRemoteKeys(keys)
-                        db.movieDao.upsertMovies(movies.map { it.toEntity() })
+                        db.movieDao.insertMovies(movieEntities)
                     }
 
                 }
