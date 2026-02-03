@@ -51,26 +51,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="Add refine to the snack bar at movie list">
+    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="Add movie detail database setup and refine movie list dao">
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/dto/MovieDto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/dto/MovieDto.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/mapper/MovieMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/mapper/MovieMapper.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/OfflineFirstMovieRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/OfflineFirstMovieRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/paging/MovieRemoteMediator.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/paging/MovieRemoteMediator.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/MyMoviesDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/MyMoviesDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/dao/MovieDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/dao/MovieDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/entities/MovieEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/entities/MovieEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/domain/src/main/java/com/example/movie/domain/model/Movie.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/domain/src/main/java/com/example/movie/domain/model/Movie.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/di/MoviePresentationModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/di/MoviePresentationModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/mapper/MovieMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/mapper/MovieMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MoviesList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/components/MoviesList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/navigation/movieGraph.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/navigation/movieGraph.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,30 +289,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769462003995</updated>
-    </task>
-    <task id="LOCAL-00001" summary="add the module structure">
-      <option name="closed" value="true" />
-      <created>1769513716685</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1769513716685</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add the module structure">
-      <option name="closed" value="true" />
-      <created>1769513817809</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1769513817809</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add the module structure">
-      <option name="closed" value="true" />
-      <created>1769516270320</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1769516270320</updated>
     </task>
     <task id="LOCAL-00004" summary="add the version catalog setup">
       <option name="closed" value="true" />
@@ -679,7 +642,47 @@
       <option name="project" value="LOCAL" />
       <updated>1770154942892</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Add movie detail ui mapper">
+      <option name="closed" value="true" />
+      <created>1770154998878</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1770154998878</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Add movie detail navigation and di">
+      <option name="closed" value="true" />
+      <created>1770155050118</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1770155050118</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Add movie detail ui strings">
+      <option name="closed" value="true" />
+      <created>1770155071205</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1770155071206</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Add vote count detail to the models">
+      <option name="closed" value="true" />
+      <created>1770155121168</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1770155121168</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Add movie detail database setup and refine movie list dao">
+      <option name="closed" value="true" />
+      <created>1770155276359</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1770155276359</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -706,11 +709,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add the movie remote mediator" />
-    <MESSAGE value="add movie repo" />
-    <MESSAGE value="add movie repo impl" />
-    <MESSAGE value="add search pager source" />
-    <MESSAGE value="add movie repo injection" />
     <MESSAGE value="Merge branch 'feature/movie-caching-offline-first' into develop" />
     <MESSAGE value="Add my api access token" />
     <MESSAGE value="Add internet permission" />
@@ -731,7 +729,12 @@
     <MESSAGE value="Add upgrade version to some libraries" />
     <MESSAGE value="Add movie detail ui setup" />
     <MESSAGE value="Add refine to the snack bar at movie list" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add refine to the snack bar at movie list" />
+    <MESSAGE value="Add movie detail ui mapper" />
+    <MESSAGE value="Add movie detail navigation and di" />
+    <MESSAGE value="Add movie detail ui strings" />
+    <MESSAGE value="Add vote count detail to the models" />
+    <MESSAGE value="Add movie detail database setup and refine movie list dao" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add movie detail database setup and refine movie list dao" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
@@ -763,7 +766,7 @@
         </entry>
         <entry key="com.example.movie.presentation.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1770064664094" />
+            <CheckInfo lastCheckTimestamp="1770155054298" />
           </value>
         </entry>
         <entry key="com.example.mymovies">

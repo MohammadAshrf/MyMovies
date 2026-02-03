@@ -33,7 +33,7 @@ class OfflineFirstMovieRepository(
             config = PagingConfig(
                 pageSize = 20,
                 prefetchDistance = 4,
-                initialLoadSize = 40,
+                initialLoadSize = 120,
                 enablePlaceholders = false,
             ),
             remoteMediator = MovieRemoteMediator(
