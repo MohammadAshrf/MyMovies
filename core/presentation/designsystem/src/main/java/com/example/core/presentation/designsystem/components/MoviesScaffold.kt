@@ -10,10 +10,12 @@ fun MoviesScaffold(
     modifier: Modifier = Modifier,
     withGradient: Boolean = true,
     topAppBar: @Composable () -> Unit = {},
+    snackbarHost: @Composable () -> Unit = {},
     content: @Composable (PaddingValues) -> Unit
 ) {
     Scaffold(
         topBar = topAppBar,
+        snackbarHost = snackbarHost,
         modifier = modifier
     ) { padding ->
         if (withGradient) {

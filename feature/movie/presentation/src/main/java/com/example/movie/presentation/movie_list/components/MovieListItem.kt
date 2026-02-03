@@ -6,7 +6,6 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,12 +13,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -33,12 +27,16 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
+import coil.request.ImageRequest
 import com.example.core.presentation.designsystem.MyMoviesTheme
 import com.example.core.presentation.designsystem.StarIcon
+import com.example.movie.presentation.R
 import com.example.movie.presentation.model.MovieUi
 
 @Composable
@@ -49,6 +47,7 @@ fun MovieListItem(
 ) {
     Card(
         modifier = modifier
+            .fillMaxWidth()
             .aspectRatio(2 / 3f)
             .clip(RoundedCornerShape(12.dp))
             .clickable { onMovieClick(movie) },
@@ -56,9 +55,14 @@ fun MovieListItem(
     ) {
         Box(modifier = Modifier.fillMaxSize()) {
             AsyncImage(
-                model = movie.posterUrl,
+                model = ImageRequest.Builder(LocalContext.current)
+                    .data(movie.posterUrl)
+                    .crossfade(true)
+                    .build(),
                 contentDescription = movie.title,
-                contentScale = ContentScale.Crop,
+                contentScale = ContentScale.Fit,
+                placeholder = painterResource(id = R.drawable.empty_place_holder),
+                error = painterResource(id = R.drawable.empty_place_holder),
                 modifier = Modifier.fillMaxSize()
             )
 
@@ -135,7 +139,9 @@ fun MovieListItem(
 @Composable
 private fun MovieItemPreview() {
     MyMoviesTheme {
-        Box(modifier = Modifier.width(160.dp).padding(8.dp)) {
+        Box(modifier = Modifier
+            .width(160.dp)
+            .padding(8.dp)) {
             MovieListItem(
                 movie = MovieUi(
                     id = 1,

@@ -15,6 +15,11 @@
           <theme>@android:style/Theme.Material.Light</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/core/presentation/designsystem/src/main/res/drawable/network_error.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/core/presentation/designsystem/src/main/res/drawable/search.xml">
         <config>
           <theme>@android:style/Theme.Material.Light</theme>
@@ -25,33 +30,28 @@
           <theme>@android:style/Theme.Material.Light</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/feature/movie/presentation/src/main/res/drawable/arrow_left.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/feature/movie/presentation/src/main/res/drawable/empty_place_holder.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/feature/movie/presentation/src/main/res/drawable/logo.xml">
+        <config>
+          <theme>@android:style/Theme.Material.Light</theme>
+        </config>
+      </layout>
     </layouts>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="add movie repo injection">
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/OfflineFirstMovieRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/paging/MovieRemoteMediator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/paging/SearchPagingSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/domain/src/main/java/com/example/movie/domain/movie/MovieRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/chat/KtorMovieService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/KtorMovieService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/di/MovieDataModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/di/MovieDataModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/mapper/MovieMapper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/mapper/MovieMapper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/dao/MovieDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/dao/MovieDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/entities/MovieEntity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/database/src/main/java/com/example/movie/database/entities/MovieEntity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/domain/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/domain/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_list/MovieListScreen.kt" afterDir="false" />
-    </list>
+    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="Add upgrade version to some libraries" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +60,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[LocalEmulator::path=/home/mohammad/.android/avd/Pixel_Tablet.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PhysicalDevice::serial=23021FDEE003S1]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -95,6 +95,7 @@
         <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -157,29 +158,33 @@
     "app.teamhub.selectedTeam": "https://github.com/MohammadAshrf/MyMovies",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Merging develop",
+    "git-widget-placeholder": "feature/movie-list-presentation",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mohammad/AndroidStudioProjects/MyMovies/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util"
+    "last_opened_file_path": "/home/mohammad/AndroidStudioProjects/MyMovies/feature/movie/presentation/src/main/res/drawable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/feature/movie/presentation/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/feature/movie/presentation/src/main/res" />
+      <recent name="$PROJECT_DIR$/core/data/src/main/java/com/example/core/data/di" />
       <recent name="$PROJECT_DIR$/core/presentation/ui/src/main/java/com/example/core/presentation/ui/util" />
       <recent name="$PROJECT_DIR$/core/presentation/designsystem/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/core/presentation/designsystem/src/main/java/com/example/core/presentation/designsystem/components" />
-      <recent name="$PROJECT_DIR$/core/presentation/designsystem/src/main/res/font" />
-      <recent name="$PROJECT_DIR$/core/domain/src/main/java/com/example/core/domain/util" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/feature/movie/presentation/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/core/presentation/designsystem/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/core" />
     </key>
     <key name="android.template.-737828068">
       <recent name="com.example.movie.presentation" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.movie.domain.model" />
       <recent name="com.example.core.domain.util" />
     </key>
     <key name="K2MoveDeclarationsDialog.RECENT_PACKAGE_KEY">
+      <recent name="com.example.core.domain.util" />
       <recent name="com.example.movie.data.paging" />
       <recent name="com.example.movie.domain.movie" />
       <recent name="com.example.core.presentation.designsystem" />
@@ -467,7 +472,167 @@
       <option name="project" value="LOCAL" />
       <updated>1769951499191</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Merge branch 'feature/movie-caching-offline-first' into develop">
+      <option name="closed" value="true" />
+      <created>1769951609242</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1769951609242</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add my api access token">
+      <option name="closed" value="true" />
+      <created>1770082312839</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082312839</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add my api access token">
+      <option name="closed" value="true" />
+      <created>1770082379794</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082379794</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add internet permission">
+      <option name="closed" value="true" />
+      <created>1770082394120</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082394120</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Add paging dependencies">
+      <option name="closed" value="true" />
+      <created>1770082410355</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082410355</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add access token to http client factory">
+      <option name="closed" value="true" />
+      <created>1770082463606</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082463606</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add paging remote mediator">
+      <option name="closed" value="true" />
+      <created>1770082671461</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082671461</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add search paging source">
+      <option name="closed" value="true" />
+      <created>1770082697021</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082697021</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Add error handling &amp; convert throwable to ui text">
+      <option name="closed" value="true" />
+      <created>1770082775668</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082775668</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add debugging tree with timber">
+      <option name="closed" value="true" />
+      <created>1770082816695</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082816695</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Add movie data models &amp; mappers">
+      <option name="closed" value="true" />
+      <created>1770082915890</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1770082915890</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add movies remote data source">
+      <option name="closed" value="true" />
+      <created>1770083071332</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083071332</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Add movies repository impl">
+      <option name="closed" value="true" />
+      <created>1770083169910</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083169910</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add core data module di">
+      <option name="closed" value="true" />
+      <created>1770083192674</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083192675</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Add base components setup">
+      <option name="closed" value="true" />
+      <created>1770083327499</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083327499</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Add base components setup">
+      <option name="closed" value="true" />
+      <created>1770083331493</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083331493</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Add movie components setup">
+      <option name="closed" value="true" />
+      <created>1770083669901</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083669901</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Add movie presentation logic">
+      <option name="closed" value="true" />
+      <created>1770083871073</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083871073</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Add movie's navigation graph">
+      <option name="closed" value="true" />
+      <created>1770083933669</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1770083933669</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Add upgrade version to some libraries">
+      <option name="closed" value="true" />
+      <created>1770084008760</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1770084008760</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,7 +646,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature/movie-caching-offline-first" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -494,20 +659,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add the module structure" />
-    <MESSAGE value="add the version catalog setup" />
-    <MESSAGE value="Merge branch 'feature/setup-version-catalog' into develop&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.&#10;defining the module relations" />
-    <MESSAGE value="add build logic &amp; convention plugins" />
-    <MESSAGE value="add build gradle relations setup" />
-    <MESSAGE value="Merge branch 'feature/setup-build-logic' into develop" />
-    <MESSAGE value="add result wrapper class for error handling" />
-    <MESSAGE value="add http client handling" />
-    <MESSAGE value="edit some naming convention" />
-    <MESSAGE value="add serialization dependency" />
-    <MESSAGE value="add room plugin" />
-    <MESSAGE value="add database schema setup" />
-    <MESSAGE value="add and refine some dependencies" />
-    <MESSAGE value="edit rating string" />
     <MESSAGE value="add paging dependency" />
     <MESSAGE value="add movie entity mapper" />
     <MESSAGE value="add the movie remote mediator" />
@@ -515,29 +666,47 @@
     <MESSAGE value="add movie repo impl" />
     <MESSAGE value="add search pager source" />
     <MESSAGE value="add movie repo injection" />
-    <option name="LAST_COMMIT_MESSAGE" value="add movie repo injection" />
+    <MESSAGE value="Merge branch 'feature/movie-caching-offline-first' into develop" />
+    <MESSAGE value="Add my api access token" />
+    <MESSAGE value="Add internet permission" />
+    <MESSAGE value="Add paging dependencies" />
+    <MESSAGE value="Add access token to http client factory" />
+    <MESSAGE value="Add paging remote mediator" />
+    <MESSAGE value="Add search paging source" />
+    <MESSAGE value="Add error handling &amp; convert throwable to ui text" />
+    <MESSAGE value="Add debugging tree with timber" />
+    <MESSAGE value="Add movie data models &amp; mappers" />
+    <MESSAGE value="Add movies remote data source" />
+    <MESSAGE value="Add movies repository impl" />
+    <MESSAGE value="Add core data module di" />
+    <MESSAGE value="Add base components setup" />
+    <MESSAGE value="Add movie components setup" />
+    <MESSAGE value="Add movie presentation logic" />
+    <MESSAGE value="Add movie's navigation graph" />
+    <MESSAGE value="Add upgrade version to some libraries" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add upgrade version to some libraries" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
       <map>
         <entry key="com.example.core.data.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1769513632326" />
+            <CheckInfo lastCheckTimestamp="1770077798891" />
           </value>
         </entry>
         <entry key="com.example.core.presentation.designsystem.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1769846582595" />
+            <CheckInfo lastCheckTimestamp="1770064689098" />
           </value>
         </entry>
         <entry key="com.example.core.presentation.ui.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1769611150380" />
+            <CheckInfo lastCheckTimestamp="1770060713392" />
           </value>
         </entry>
         <entry key="com.example.movie.data.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1769945010097" />
+            <CheckInfo lastCheckTimestamp="1770077792202" />
           </value>
         </entry>
         <entry key="com.example.movie.database.test">
@@ -547,17 +716,17 @@
         </entry>
         <entry key="com.example.movie.presentation.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1769786277147" />
+            <CheckInfo lastCheckTimestamp="1770064664094" />
           </value>
         </entry>
         <entry key="com.example.mymovies">
           <value>
-            <CheckInfo lastCheckTimestamp="1769861458084" />
+            <CheckInfo lastCheckTimestamp="1770077801613" />
           </value>
         </entry>
         <entry key="com.example.mymovies.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1769861458082" />
+            <CheckInfo lastCheckTimestamp="1770077801614" />
           </value>
         </entry>
       </map>

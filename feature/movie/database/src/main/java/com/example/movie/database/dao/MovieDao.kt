@@ -12,7 +12,15 @@ interface MovieDao {
     @Upsert
     suspend fun upsertMovies(movies: List<MovieEntity>)
 
-    @Query("SELECT * FROM movie_entity")
+    @Query("""
+    SELECT movie_entity.*
+    FROM movie_entity
+    INNER JOIN movie_remote_keys 
+        ON movie_entity.id = movie_remote_keys.movieId
+    ORDER BY 
+        COALESCE(movie_remote_keys.prevKey, 0) ASC,
+        movie_entity.id ASC
+""")
     fun getMoviesPagingSource(): PagingSource<Int, MovieEntity>
 
     @Query("SELECT * FROM movie_entity WHERE id = :id")

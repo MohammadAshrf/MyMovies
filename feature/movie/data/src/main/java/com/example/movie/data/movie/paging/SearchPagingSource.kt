@@ -1,7 +1,8 @@
-package com.example.movie.data.paging
+package com.example.movie.data.movie.paging
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
+import com.example.core.domain.util.DataErrorException
 import com.example.core.domain.util.Result
 import com.example.movie.domain.model.Movie
 import com.example.movie.domain.movie.MovieService
@@ -12,14 +13,18 @@ class SearchPagingSource(
 ) : PagingSource<Int, Movie>() {
 
     override fun getRefreshKey(state: PagingState<Int, Movie>): Int? {
-        return state.anchorPosition
+        val anchor = state.anchorPosition ?: return null
+        val page = state.closestPageToPosition(anchor)
+        return page?.prevKey?.plus(1) ?: page?.nextKey?.minus(1)
     }
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Movie> {
         val page = params.key ?: 1
+
         return when (val result = service.searchMovies(query, page)) {
             is Result.Success -> {
                 val movies = result.data
+
                 LoadResult.Page(
                     data = movies,
                     prevKey = if (page == 1) null else page - 1,
@@ -28,7 +33,7 @@ class SearchPagingSource(
             }
 
             is Result.Failure -> {
-                LoadResult.Error(Exception(result.error.name))
+                LoadResult.Error(DataErrorException(result.error))
             }
         }
     }

@@ -8,8 +8,10 @@ import io.ktor.client.plugins.defaultRequest
 import io.ktor.client.plugins.logging.LogLevel
 import io.ktor.client.plugins.logging.Logger
 import io.ktor.client.plugins.logging.Logging
+import io.ktor.client.request.header
 import io.ktor.http.ContentType
 import io.ktor.http.contentType
+import io.ktor.http.parameters
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 import timber.log.Timber
@@ -35,11 +37,11 @@ class HttpClientFactory {
             }
             defaultRequest {
                 contentType(ContentType.Application.Json)
-                url {
-                    parameters.append("api_key", BuildConfig.API_KEY)
-                    parameters.append("include_adult", "false")
-                    parameters.append("certification_country", "US")
-                    parameters.append("certification.lte", "PG-13")
+                header("Authorization", "Bearer ${BuildConfig.API_ACCESS_TOKEN}")
+                parameters {
+                    append("include_adult", "false")
+                    append("certification_country", "US")
+                    append("certification.lte", "PG-13")
                 }
             }
         }

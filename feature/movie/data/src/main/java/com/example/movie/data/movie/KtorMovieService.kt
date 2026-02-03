@@ -7,7 +7,11 @@ import com.example.core.domain.util.map
 import com.example.movie.data.dto.MovieDto
 import com.example.movie.data.dto.response.MoviesResponseDto
 import com.example.movie.data.mapper.toDomain
+import com.example.movie.data.movie.ParamsConstant.CERTIFICATION_COUNTRY
+import com.example.movie.data.movie.ParamsConstant.CERTIFICATION_LTE
+import com.example.movie.data.movie.ParamsConstant.INCLUDE_ADULT
 import com.example.movie.domain.model.Movie
+import com.example.movie.domain.model.PagedMovies
 import com.example.movie.domain.movie.MovieService
 import io.ktor.client.HttpClient
 
@@ -15,23 +19,33 @@ class KtorMovieService(
     private val httpClient: HttpClient
 ) : MovieService {
 
-    override suspend fun getMovies(page: Int): Result<List<Movie>, DataError.Remote> {
+    override suspend fun getMovies(page: Int): Result<PagedMovies, DataError.Remote> {
         return httpClient.get<MoviesResponseDto>(
-            route = "movie/now_playing",
+            route = "discover/movie",
             queryParams = mapOf(
-                "page" to page.toString()
+                "page" to page,
+                "include_adult" to INCLUDE_ADULT,
+                "certification_country" to CERTIFICATION_COUNTRY,
+                "certification.lte" to CERTIFICATION_LTE
             )
-        ).map { responseDto ->
-            responseDto.results.map { it.toDomain() }
+        ).map { dto ->
+            PagedMovies(
+                page = dto.page,
+                totalPages = dto.totalPages,
+                movies = dto.results.map { it.toDomain() }
+            )
         }
     }
 
-    override suspend fun searchMovies(query: String, page: Int): Result<List<Movie>, DataError.Remote> {
+    override suspend fun searchMovies(
+        query: String,
+        page: Int
+    ): Result<List<Movie>, DataError.Remote> {
         return httpClient.get<MoviesResponseDto>(
             route = "search/movie",
             queryParams = mapOf(
                 "query" to query,
-                "page" to page.toString()
+                "page" to page
             )
         ).map { responseDto ->
             responseDto.results.map { it.toDomain() }

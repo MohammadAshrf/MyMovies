@@ -1,95 +1,203 @@
 package com.example.movie.presentation.movie_list.components
 
 import android.content.res.Configuration
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyGridState
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.grid.rememberLazyGridState
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.paging.LoadState
+import androidx.paging.PagingData
+import androidx.paging.compose.LazyPagingItems
+import androidx.paging.compose.collectAsLazyPagingItems
 import com.example.core.presentation.designsystem.MyMoviesTheme
+import com.example.core.presentation.ui.util.asUiText
+import com.example.movie.presentation.R
 import com.example.movie.presentation.model.MovieUi
+import kotlinx.coroutines.flow.flowOf
+
 @Composable
 fun MoviesList(
-    movies: List<MovieUi>,
-    isPaginationLoading: Boolean,
-    paginationError: String?,
+    movies: LazyPagingItems<MovieUi>,
     scrollState: LazyGridState,
     onMovieClick: (MovieUi) -> Unit,
-    onRetryPaginationClick: () -> Unit,
-    onLoadMore: () -> Unit, // ✅ 1. تمت الإضافة هنا
+    onRetry: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    // ✅ 2. استدعاء الـ Listener عشان يراقب السكرول
-    PaginationScrollListener(
-        gridState = scrollState,
-        itemCount = movies.size,
-        isPaginationLoading = isPaginationLoading,
-        isEndReached = false, // ممكن تمررها كباراميتر لو حابب، أو تسيبها false والـ VM يهندلها
-        onLoadMore = onLoadMore
-    )
+    val keyboardController = LocalSoftwareKeyboardController.current
 
-    if (movies.isEmpty() && !isPaginationLoading) {
-        Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-            Text("No movies found")
+    LaunchedEffect(scrollState.isScrollInProgress) {
+        if (scrollState.isScrollInProgress) {
+            keyboardController?.hide()
         }
-    } else {
-        LazyVerticalGrid(
-            columns = GridCells.Fixed(2),
-            state = scrollState,
-            contentPadding = PaddingValues(16.dp),
-            verticalArrangement = Arrangement.spacedBy(16.dp),
-            horizontalArrangement = Arrangement.spacedBy(16.dp),
-            modifier = modifier
-        ) {
-            items(
-                items = movies,
-                key = { it.id }
-            ) { movie ->
-                MovieListItem(
-                    movie = movie,
-                    onMovieClick = onMovieClick
-                )
-            }
+    }
 
-            if (isPaginationLoading || paginationError != null) {
-                item(
-                    span = { GridItemSpan(maxLineSpan) }
+    val refreshState = movies.loadState.refresh
+    val appendState = movies.loadState.append
+
+    when (refreshState) {
+        is LoadState.Loading if movies.itemCount == 0 -> {
+            LazyVerticalGrid(
+                columns = GridCells.Fixed(2),
+                contentPadding = PaddingValues(24.dp),
+                verticalArrangement = Arrangement.spacedBy(24.dp),
+                horizontalArrangement = Arrangement.spacedBy(24.dp),
+                modifier = modifier.fillMaxSize()
+            ) {
+                items(10) {
+                    ShimmerMovieItem()
+                }
+            }
+        }
+
+        is LoadState.NotLoading if movies.itemCount == 0 && appendState.endOfPaginationReached -> {
+            Box(
+                modifier = modifier.fillMaxSize(),
+                contentAlignment = Alignment.Center
+            ) {
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.Center,
+                    modifier = Modifier.padding(16.dp)
                 ) {
-                    if (isPaginationLoading) {
+                    Image(
+                        painter = painterResource(id = R.drawable.empty_brain),
+                        contentDescription = null,
+                        modifier = Modifier
+                            .size(120.dp)
+                            .alpha(0.5f),
+                    )
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+                    Text(
+                        text = stringResource(R.string.no_movies_found),
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+        }
+
+        is LoadState.Error if movies.itemCount == 0 -> {
+            val error = refreshState.error
+
+            Column(
+                modifier = modifier
+                    .fillMaxSize()
+                    .padding(16.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Image(
+                    painter = painterResource(id = R.drawable.network_error),
+                    contentDescription = null,
+                    modifier = Modifier.size(120.dp),
+                )
+
+                Spacer(modifier = Modifier.height(16.dp))
+
+                Text(
+                    text = error.asUiText().asString(),
+                    style = MaterialTheme.typography.titleMedium,
+                    textAlign = TextAlign.Center,
+                    color = MaterialTheme.colorScheme.onSurface
+                )
+
+                Spacer(modifier = Modifier.height(16.dp))
+
+                Button(onClick = onRetry) {
+                    Text(text = stringResource(R.string.retry))
+                }
+            }
+        }
+
+        else -> {
+            LazyVerticalGrid(
+                columns = GridCells.Fixed(2),
+                state = scrollState,
+                contentPadding = PaddingValues(24.dp),
+                verticalArrangement = Arrangement.spacedBy(24.dp),
+                horizontalArrangement = Arrangement.spacedBy(24.dp),
+                modifier = modifier
+            ) {
+
+                items(
+                    count = movies.itemCount,
+                ) { index ->
+                    val movie = movies[index]
+                    if (movie != null) {
+                        MovieListItem(
+                            movie = movie,
+                            onMovieClick = onMovieClick
+                        )
+                    }
+                }
+
+                if (appendState is LoadState.Loading) {
+                    item(
+                        span = { GridItemSpan(maxLineSpan) }
+                    ) {
                         Box(
                             modifier = Modifier
                                 .fillMaxWidth()
+                                .height(72.dp)
                                 .padding(16.dp),
                             contentAlignment = Alignment.Center
                         ) {
                             CircularProgressIndicator()
                         }
-                    } else if (paginationError != null) {
+                    }
+                }
+
+                if (appendState is LoadState.Error) {
+                    val error = appendState.error
+                    item(
+                        span = { GridItemSpan(maxLineSpan) }
+                    ) {
                         Column(
-                            horizontalAlignment = Alignment.CenterHorizontally,
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(16.dp)
+                                .padding(16.dp),
+                            horizontalAlignment = Alignment.CenterHorizontally
                         ) {
-                            Text(text = paginationError, color = MaterialTheme.colorScheme.error)
-                            Button(onClick = onRetryPaginationClick) { Text("Retry") }
+                            Text(
+                                text = error.asUiText().asString(),
+                                color = MaterialTheme.colorScheme.error,
+                                style = MaterialTheme.typography.bodySmall
+                            )
+                            Button(
+                                onClick = { movies.retry() },
+                                modifier = Modifier.padding(top = 8.dp)
+                            ) {
+                                Text(stringResource(R.string.retry))
+                            }
                         }
                     }
                 }
@@ -122,51 +230,14 @@ private val dummyMovies = List(6) { index ->
 @Composable
 private fun MoviesListContentPreview() {
     MyMoviesTheme {
-        Box(modifier = Modifier.fillMaxSize()) {
-            MoviesList(
-                movies = dummyMovies,
-                isPaginationLoading = false,
-                paginationError = null,
-                scrollState = rememberLazyGridState(),
-                onMovieClick = {},
-                onRetryPaginationClick = {},
-                onLoadMore = {}
-            )
-        }
-    }
-}
+        val pagedData = flowOf(PagingData.from(dummyMovies)).collectAsLazyPagingItems()
 
-@Preview(name = "Pagination Loading")
-@Composable
-private fun MoviesListLoadingPreview() {
-    MyMoviesTheme {
         Box(modifier = Modifier.fillMaxSize()) {
             MoviesList(
-                movies = dummyMovies,
-                isPaginationLoading = true,
-                paginationError = null,
+                movies = pagedData,
                 scrollState = rememberLazyGridState(),
                 onMovieClick = {},
-                onRetryPaginationClick = {},
-                onLoadMore = {}
-            )
-        }
-    }
-}
-
-@Preview(name = "Pagination Error")
-@Composable
-private fun MoviesListErrorPreview() {
-    MyMoviesTheme {
-        Box(modifier = Modifier.fillMaxSize()) {
-            MoviesList(
-                movies = dummyMovies,
-                isPaginationLoading = false,
-                paginationError = "Failed to load more movies",
-                scrollState = rememberLazyGridState(),
-                onMovieClick = {},
-                onRetryPaginationClick = {},
-                onLoadMore = {}
+                onRetry = {}
             )
         }
     }
