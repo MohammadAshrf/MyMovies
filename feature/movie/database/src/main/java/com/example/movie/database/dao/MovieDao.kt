@@ -2,6 +2,8 @@ package com.example.movie.database.dao
 
 import androidx.paging.PagingSource
 import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Upsert
 import com.example.movie.database.entities.MovieEntity
@@ -9,18 +11,13 @@ import com.example.movie.database.entities.MovieEntity
 @Dao
 interface MovieDao {
 
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    suspend fun insertMovies(movies: List<MovieEntity>)
+
     @Upsert
     suspend fun upsertMovies(movies: List<MovieEntity>)
 
-    @Query("""
-    SELECT movie_entity.*
-    FROM movie_entity
-    INNER JOIN movie_remote_keys 
-        ON movie_entity.id = movie_remote_keys.movieId
-    ORDER BY 
-        COALESCE(movie_remote_keys.prevKey, 0) ASC,
-        movie_entity.id ASC
-""")
+    @Query("SELECT * FROM movie_entity ORDER BY orderIndex ASC")
     fun getMoviesPagingSource(): PagingSource<Int, MovieEntity>
 
     @Query("SELECT * FROM movie_entity WHERE id = :id")

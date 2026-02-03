@@ -24,7 +24,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ShimmerMovieItem(
+fun MovieItemShimmer(
     modifier: Modifier = Modifier
 ) {
     val shimmerColors = listOf(

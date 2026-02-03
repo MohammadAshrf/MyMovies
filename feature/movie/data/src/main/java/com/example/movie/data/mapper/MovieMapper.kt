@@ -12,19 +12,22 @@ fun MovieDto.toDomain(): Movie {
         posterPath = posterPath,
         backdropPath = backdropPath,
         releaseDate = releaseDate,
-        voteAverage = voteAverage
+        voteAverage = voteAverage,
+        voteCount = voteCount
     )
 }
 
-fun Movie.toEntity(): MovieEntity {
+fun Movie.toEntity(orderIndex: Int): MovieEntity {
     return MovieEntity(
         id = id,
+        orderIndex = orderIndex,
         title = title,
         overview = overview,
         posterPath = posterPath,
         backdropPath = backdropPath,
         releaseDate = releaseDate,
         voteAverage = voteAverage,
+        voteCount = voteCount
     )
 }
 
@@ -36,6 +39,7 @@ fun MovieEntity.toDomain(): Movie {
         posterPath = posterPath,
         backdropPath = backdropPath,
         releaseDate = releaseDate,
-        voteAverage = voteAverage
+        voteAverage = voteAverage,
+        voteCount = voteCount
     )
 }

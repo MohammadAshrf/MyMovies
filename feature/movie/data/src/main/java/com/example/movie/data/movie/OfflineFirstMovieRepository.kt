@@ -9,6 +9,8 @@ import androidx.paging.PagingData
 import androidx.paging.map
 import com.example.core.domain.util.DataError
 import com.example.core.domain.util.Result
+import com.example.core.domain.util.onFailure
+import com.example.core.domain.util.onSuccess
 import com.example.movie.data.mapper.toDomain
 import com.example.movie.data.mapper.toEntity
 import com.example.movie.data.movie.paging.MovieRemoteMediator
@@ -31,7 +33,7 @@ class OfflineFirstMovieRepository(
             config = PagingConfig(
                 pageSize = 20,
                 prefetchDistance = 4,
-                initialLoadSize = 20,
+                initialLoadSize = 120,
                 enablePlaceholders = false,
             ),
             remoteMediator = MovieRemoteMediator(
@@ -49,23 +51,27 @@ class OfflineFirstMovieRepository(
 
     override fun getMovieDetails(movieId: Int): Flow<Result<Movie, DataError.Remote>> = flow {
         val localMovie = db.movieDao.getMovieById(movieId)
+
         if (localMovie != null) {
             emit(Result.Success(localMovie.toDomain()))
         }
 
-        when (val result = service.getMovieDetails(movieId)) {
-            is Result.Success -> {
-                val remoteMovie = result.data
-                db.movieDao.upsertMovies(listOf(remoteMovie.toEntity()))
-                emit(Result.Success(remoteMovie))
-            }
+        service.getMovieDetails(movieId)
+            .onSuccess {
+                val orderIndexToSave = localMovie?.orderIndex ?: Int.MAX_VALUE
 
-            is Result.Failure -> {
+                val newEntity = it.toEntity(orderIndexToSave)
+
+                if (localMovie != newEntity) {
+                    db.movieDao.upsertMovies(listOf(newEntity))
+                }
+                emit(Result.Success(it))
+            }
+            .onFailure { error ->
                 if (localMovie == null) {
-                    emit(Result.Failure(result.error))
+                    emit(Result.Failure(error))
                 }
             }
-        }
     }
 
     override fun searchMovies(query: String): Flow<PagingData<Movie>> {

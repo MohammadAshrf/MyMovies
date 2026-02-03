@@ -71,7 +71,7 @@ fun MoviesList(
                 modifier = modifier.fillMaxSize()
             ) {
                 items(10) {
-                    ShimmerMovieItem()
+                    MovieItemShimmer()
                 }
             }
         }
