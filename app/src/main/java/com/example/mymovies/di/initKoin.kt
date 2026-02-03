@@ -1,5 +1,6 @@
 package com.example.mymovies.di
 
+import com.example.core.data.di.coreDataModule
 import com.example.movie.data.di.movieDataModule
 import com.example.movie.presentation.di.moviesPresentationModule
 import org.koin.core.context.startKoin
@@ -9,6 +10,7 @@ fun initKoin(config: KoinAppDeclaration? = null) {
     startKoin {
         config?.invoke(this)
         modules(
+            coreDataModule,
             moviesPresentationModule,
             movieDataModule
         )
