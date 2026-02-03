@@ -11,8 +11,8 @@ import com.example.core.domain.util.DataError
 import com.example.core.domain.util.Result
 import com.example.movie.data.mapper.toDomain
 import com.example.movie.data.mapper.toEntity
-import com.example.movie.data.paging.MovieRemoteMediator
-import com.example.movie.data.paging.SearchPagingSource
+import com.example.movie.data.movie.paging.MovieRemoteMediator
+import com.example.movie.data.movie.paging.SearchPagingSource
 import com.example.movie.database.MyMoviesDatabase
 import com.example.movie.domain.model.Movie
 import com.example.movie.domain.movie.MovieRepository
@@ -30,9 +30,9 @@ class OfflineFirstMovieRepository(
         return Pager(
             config = PagingConfig(
                 pageSize = 20,
-                prefetchDistance = 10,
-                initialLoadSize = 40,
-                enablePlaceholders = false
+                prefetchDistance = 4,
+                initialLoadSize = 20,
+                enablePlaceholders = false,
             ),
             remoteMediator = MovieRemoteMediator(
                 db = db,
@@ -46,7 +46,6 @@ class OfflineFirstMovieRepository(
                 pagingData.map { it.toDomain() }
             }
     }
-
 
     override fun getMovieDetails(movieId: Int): Flow<Result<Movie, DataError.Remote>> = flow {
         val localMovie = db.movieDao.getMovieById(movieId)
