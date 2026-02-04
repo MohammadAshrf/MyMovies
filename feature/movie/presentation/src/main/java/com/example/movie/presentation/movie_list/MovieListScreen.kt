@@ -25,6 +25,7 @@ import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -39,6 +40,7 @@ import com.example.core.presentation.designsystem.components.MoviesScaffold
 import com.example.core.presentation.designsystem.components.MoviesToolbar
 import com.example.core.presentation.designsystem.toolbar.ToolbarNavIcon
 import com.example.core.presentation.ui.util.ObserveAsEvents
+import com.example.movie.domain.model.MovieSource
 import com.example.movie.presentation.R
 import com.example.movie.presentation.model.MovieUi
 import com.example.movie.presentation.movie_list.components.MoviesList
@@ -49,7 +51,7 @@ import org.koin.androidx.compose.koinViewModel
 
 @Composable
 fun MovieListRoot(
-    onMovieClick: (Int) -> Unit,
+    onMovieClick: (Int, MovieSource) -> Unit,
     onSearchClick: () -> Unit,
     viewModel: MovieListViewModel = koinViewModel()
 ) {
@@ -78,7 +80,7 @@ fun MovieListRoot(
 
     ObserveAsEvents(viewModel.events) { event ->
         when (event) {
-            is MovieListEvent.OnMovieClick -> onMovieClick(event.movieId)
+            is MovieListEvent.OnMovieClick -> onMovieClick(event.movieId, event.source)
             MovieListEvent.OnSearchClick -> onSearchClick()
             is MovieListEvent.OnError -> {
                 scope.launch {
@@ -153,7 +155,7 @@ fun MovieListScreen(
                     onAction(MovieListAction.OnMovieClick(movie))
                 },
                 onRetry = { movies.retry() },
-                modifier = Modifier.fillMaxSize()
+                modifier = Modifier.fillMaxSize().testTag("movie_list")
             )
         }
     }
