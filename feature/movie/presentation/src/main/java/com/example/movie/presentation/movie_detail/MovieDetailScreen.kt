@@ -33,11 +33,13 @@ import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
+import coil.request.CachePolicy
 import coil.request.ImageRequest
 import com.example.core.presentation.designsystem.MyMoviesTheme
 import com.example.core.presentation.designsystem.components.MoviesToolbar
 import com.example.core.presentation.designsystem.toolbar.ToolbarNavIcon
 import com.example.core.presentation.ui.util.ObserveAsEvents
+import com.example.movie.domain.model.MovieSource
 import com.example.movie.presentation.R
 import com.example.movie.presentation.model.MovieDetailUi
 import com.example.movie.presentation.movie_detail.components.MovieDetailShimmer
@@ -46,6 +48,7 @@ import org.koin.androidx.compose.koinViewModel
 @Composable
 fun MovieDetailRoot(
     movieId: Int,
+    source: MovieSource,
     onBackClick: () -> Unit,
     viewModel: MovieDetailViewModel = koinViewModel()
 ) {
@@ -67,7 +70,7 @@ fun MovieDetailRoot(
     }
 
     LaunchedEffect(movieId) {
-        viewModel.onAction(MovieDetailAction.OnLoadMovie(movieId))
+        viewModel.onAction(MovieDetailAction.OnLoadMovie(movieId, source))
     }
 
     MovieDetailScreen(
@@ -119,6 +122,8 @@ fun MovieDetailScreen(
                         model = ImageRequest.Builder(LocalContext.current)
                             .data(movie.backdropUrl ?: movie.posterUrl)
                             .crossfade(true)
+                            .diskCachePolicy(CachePolicy.ENABLED)
+                            .networkCachePolicy(CachePolicy.ENABLED)
                             .build(),
                         contentDescription = movie.title,
                         contentScale = ContentScale.Fit,

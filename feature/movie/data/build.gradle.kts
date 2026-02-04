@@ -10,6 +10,7 @@ android {
 
 dependencies {
     implementation(libs.koin.android)
+    implementation(libs.bundles.unit.testing)
 
     implementation(projects.core.data)
     implementation(projects.core.domain)

@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
 import androidx.paging.map
 import com.example.core.presentation.ui.util.asUiText
+import com.example.movie.domain.model.MovieSource
 import com.example.movie.domain.movie.MovieRepository
 import com.example.movie.presentation.mapper.toUi
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -47,8 +48,14 @@ class MovieListViewModel(
     fun onAction(action: MovieListAction) {
         when (action) {
             is MovieListAction.OnMovieClick -> {
+                val source = if (state.value.isSearchActive) {
+                    MovieSource.SEARCH
+                } else {
+                    MovieSource.LIST
+                }
+
                 viewModelScope.launch {
-                    _events.send(MovieListEvent.OnMovieClick(action.movie.id))
+                    _events.send(MovieListEvent.OnMovieClick(action.movie.id, source))
                 }
             }
 

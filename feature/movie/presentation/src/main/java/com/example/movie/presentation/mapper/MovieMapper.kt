@@ -39,6 +39,8 @@ fun Movie.toDetailUi(): MovieDetailUi {
         "—"
     }
 
+    val ratingCount = voteCount?.let { "($it votes)" }?.ifBlank { "—" }
+
     return MovieDetailUi(
         id = id,
         title = title,
@@ -47,6 +49,6 @@ fun Movie.toDetailUi(): MovieDetailUi {
         backdropUrl = fullBackdropUrl,
         releaseDate = releaseDate?.ifBlank { "—" },
         rating = rating,
-        ratingCount = "($voteCount votes)".ifBlank { "—" }
+        ratingCount = ratingCount
     )
 }

@@ -17,6 +17,7 @@ import com.example.movie.data.movie.paging.MovieRemoteMediator
 import com.example.movie.data.movie.paging.SearchPagingSource
 import com.example.movie.database.MyMoviesDatabase
 import com.example.movie.domain.model.Movie
+import com.example.movie.domain.model.MovieSource
 import com.example.movie.domain.movie.MovieRepository
 import com.example.movie.domain.movie.MovieService
 import kotlinx.coroutines.flow.Flow
@@ -31,10 +32,7 @@ class OfflineFirstMovieRepository(
     override fun getMovies(): Flow<PagingData<Movie>> {
         return Pager(
             config = PagingConfig(
-                pageSize = 20,
-                prefetchDistance = 4,
-                initialLoadSize = 120,
-                enablePlaceholders = false,
+                pageSize = 20
             ),
             remoteMediator = MovieRemoteMediator(
                 db = db,
@@ -49,8 +47,12 @@ class OfflineFirstMovieRepository(
             }
     }
 
-    override fun getMovieDetails(movieId: Int): Flow<Result<Movie, DataError.Remote>> = flow {
-        val localMovie = db.movieDao.getMovieById(movieId)
+    override fun getMovieDetails(movieId: Int, source: MovieSource): Flow<Result<Movie, DataError.Remote>> = flow {
+        val localMovie = if (source == MovieSource.LIST) {
+            db.movieDao.getMovieById(movieId)
+        } else {
+            null
+        }
 
         if (localMovie != null) {
             emit(Result.Success(localMovie.toDomain()))
@@ -58,12 +60,15 @@ class OfflineFirstMovieRepository(
 
         service.getMovieDetails(movieId)
             .onSuccess {
-                val orderIndexToSave = localMovie?.orderIndex ?: Int.MAX_VALUE
+                if (source == MovieSource.LIST) {
+                    val orderIndexToSave = localMovie?.orderIndex ?: Int.MAX_VALUE
 
-                val newEntity = it.toEntity(orderIndexToSave)
-
-                if (localMovie != newEntity) {
-                    db.movieDao.upsertMovies(listOf(newEntity))
+                    if (localMovie != null) {
+                        val newEntity = it.toEntity(orderIndexToSave)
+                        if (localMovie != newEntity) {
+                            db.movieDao.upsertMovies(listOf(newEntity))
+                        }
+                    }
                 }
                 emit(Result.Success(it))
             }

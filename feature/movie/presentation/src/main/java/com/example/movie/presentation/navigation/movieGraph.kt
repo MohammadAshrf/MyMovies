@@ -17,8 +17,8 @@ fun NavGraphBuilder.moviesGraph(
     ) {
         composable<MovieGraphRoutes.MovieList> {
             MovieListRoot(
-                onMovieClick = { movieId ->
-                    navController.navigate(MovieGraphRoutes.MovieDetail(movieId))
+                onMovieClick = { movieId, source ->
+                    navController.navigate(MovieGraphRoutes.MovieDetail(movieId, source))
                 },
                 onSearchClick = {
                     navController.navigate(MovieGraphRoutes.Search)
@@ -31,6 +31,7 @@ fun NavGraphBuilder.moviesGraph(
 
             MovieDetailRoot(
                 movieId = args.movieId,
+                source = args.source,
                 onBackClick = {
                     navController.navigateUp()
                 }

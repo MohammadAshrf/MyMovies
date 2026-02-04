@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.core.domain.util.onFailure
 import com.example.core.domain.util.onSuccess
 import com.example.core.presentation.ui.util.asUiText
+import com.example.movie.domain.model.MovieSource
 import com.example.movie.domain.movie.MovieRepository
 import com.example.movie.presentation.mapper.toDetailUi
 import kotlinx.coroutines.channels.Channel
@@ -37,7 +38,7 @@ class MovieDetailViewModel(
         when (action) {
             is MovieDetailAction.OnLoadMovie -> {
                 currentMovieId = action.movieId
-                loadMovie(action.movieId)
+                loadMovie(action.movieId, action.source)
             }
 
             MovieDetailAction.OnBackClick -> {
@@ -48,11 +49,11 @@ class MovieDetailViewModel(
         }
     }
 
-    private fun loadMovie(movieId: Int) {
+    private fun loadMovie(movieId: Int, source: MovieSource) {
         viewModelScope.launch {
             _state.update { it.copy(isLoading = true) }
 
-            repository.getMovieDetails(movieId)
+            repository.getMovieDetails(movieId, source)
                 .collect { result ->
                     result.onSuccess { movie ->
                         _state.update {

@@ -5,5 +5,6 @@ plugins {
 dependencies {
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.paging.compose)
+    implementation(libs.kotlinx.serialization.json)
     implementation(projects.core.domain)
 }
