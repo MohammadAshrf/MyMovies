@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="movies">Movies</string>
+    <string name="retry">Retry</string>
+    <string name="no_movies_found">No movies found!</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="overview">Overview</string>
+    <string name="released">Released: %1$s • ⭐ %2$s %3$s</string>
+    <string name="movie">Movie • %1$s</string>
+    <string name="empty_dash">—</string>
+    <string name="rating_count">(%1$s)</string>
+</resources>
