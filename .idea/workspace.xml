@@ -15,11 +15,6 @@
           <theme>@android:style/Theme.Material.Light</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/core/presentation/designsystem/src/main/res/drawable/network_error.xml">
-        <config>
-          <theme>@android:style/Theme.Material.Light</theme>
-        </config>
-      </layout>
       <layout url="file://$PROJECT_DIR$/core/presentation/designsystem/src/main/res/drawable/search.xml">
         <config>
           <theme>@android:style/Theme.Material.Light</theme>
@@ -30,17 +25,7 @@
           <theme>@android:style/Theme.Material.Light</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/feature/movie/presentation/src/main/res/drawable/arrow_left.xml">
-        <config>
-          <theme>@android:style/Theme.Material.Light</theme>
-        </config>
-      </layout>
       <layout url="file://$PROJECT_DIR$/feature/movie/presentation/src/main/res/drawable/empty_place_holder.xml">
-        <config>
-          <theme>@android:style/Theme.Material.Light</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/feature/movie/presentation/src/main/res/drawable/logo.xml">
         <config>
           <theme>@android:style/Theme.Material.Light</theme>
         </config>
@@ -51,27 +36,30 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="Add movie detail database setup and refine movie list dao">
+    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="Add movie detail viewmodel unit testing">
+      <change afterPath="$PROJECT_DIR$/.idea/androidTestResultsUserPreferences.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/androidTest/java/com/example/movie/presentation/MovieListScreenTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/OfflineFirstMovieRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/feature/movie/data/src/main/java/com/example/movie/data/movie/OfflineFirstMovieRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="module" />
-      <option value="repository" />
-    </option>
-  </component>
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PhysicalDevice::serial=23021FDEE003S1]" />
   <component name="ExternalProjectsData">
@@ -82,6 +70,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -103,12 +94,13 @@
         <option value="Kotlin File" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
         <option value="Compose UI Screen with ViewModel.kt.child.0" />
         <option value="Compose UI Screen with ViewModel.kt.child.2" />
         <option value="Compose UI Screen with ViewModel.kt.child.1" />
         <option value="Compose UI Screen with ViewModel" />
+        <option value="Kotlin Enum" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -161,20 +153,31 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Android App.app.executor": "Run",
+    "Android Instrumented Tests.MovieListScreenTest.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
+    "Gradle.MovieDetailViewModelTest (1).executor": "Coverage",
+    "Gradle.MovieDetailViewModelTest.executor": "Run",
+    "Gradle.MovieListViewModelTest (1).executor": "Coverage",
+    "Gradle.MovieListViewModelTest.executor": "Run",
+    "Gradle.MovieListViewModelTest.when movie clicked from search then navigation event with SEARCH source should be emitted.executor": "Run",
+    "Gradle.MovieListViewModelTest.when movie clicked then navigation event should be emitted.executor": "Run",
+    "Gradle.OfflineFirstMovieRepositoryTest.executor": "Coverage",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "app.teamhub.selectedTeam": "https://github.com/MohammadAshrf/MyMovies",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
-    "git-widget-placeholder": "feature/movie-detalis",
+    "git-widget-placeholder": "feature/unit-testing",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/mohammad/AndroidStudioProjects/MyMovies/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_detail/components"
+    "last_directory_selection": "/home/mohammad/AndroidStudioProjects/MyMovies/feature/movie/data/src/test/java/com/example/movie/data",
+    "last_opened_file_path": "/home/mohammad/AndroidStudioProjects/MyMovies/feature/movie/presentation/src/main/java/com/example/movie/presentation/movie_detail/components",
+    "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -193,6 +196,11 @@
     <key name="android.template.-737828068">
       <recent name="com.example.movie.presentation" />
     </key>
+    <key name="TestGenerationDialog.RecentsKey">
+      <recent name="com.example.movie.data.movie" />
+      <recent name="com.example.movie.presentation.movie_detail" />
+      <recent name="com.example.movie.presentation.movie_list" />
+    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.example.movie.presentation.model" />
       <recent name="com.example.movie.presentation.movie_detail" />
@@ -208,7 +216,7 @@
       <recent name="com.example.core.presentation.designsystem" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="MyMovies.app" />
       <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
@@ -281,6 +289,170 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieListScreenTest" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
+      <module name="MyMovies.feature.movie.presentation" />
+      <option name="ANDROID_TEST_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="TESTING_TYPE" value="2" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="com.example.movie.presentation.MovieListScreenTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_NAME_REGEX" value="" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieDetailViewModelTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":feature:movie:presentation:testDebugUnitTest" />
+            <option value="--tests" />
+            <option value="&quot;com.example.movie.presentation.movie_detail.MovieDetailViewModelTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MovieListViewModelTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":feature:movie:presentation:testDebugUnitTest" />
+            <option value="--tests" />
+            <option value="&quot;com.example.movie.presentation.movie_list.MovieListViewModelTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MovieListViewModelTest.when movie clicked from search then navigation event with SEARCH source should be emitted" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":feature:movie:presentation:testDebugUnitTest" />
+            <option value="--tests" />
+            <option value="&quot;com.example.movie.presentation.movie_list.MovieListViewModelTest.when movie clicked from search then navigation event with SEARCH source should be emitted&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="OfflineFirstMovieRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":feature:movie:data:testDebugUnitTest" />
+            <option value="--tests" />
+            <option value="&quot;com.example.movie.data.movie.OfflineFirstMovieRepositoryTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android Instrumented Tests.MovieListScreenTest" />
+        <item itemvalue="Gradle.OfflineFirstMovieRepositoryTest" />
+        <item itemvalue="Gradle.MovieDetailViewModelTest (1)" />
+        <item itemvalue="Gradle.MovieListViewModelTest (1)" />
+        <item itemvalue="Gradle.MovieListViewModelTest.when movie clicked from search then navigation event with SEARCH source should be emitted" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -289,54 +461,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769462003995</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add the version catalog setup">
-      <option name="closed" value="true" />
-      <created>1769522662632</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1769522662632</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add the version catalog setup">
-      <option name="closed" value="true" />
-      <created>1769526054474</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1769526054474</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Merge branch 'feature/setup-version-catalog' into develop&#10;# Please enter a commit message to explain why this merge is necessary,&#10;# especially if it merges an updated upstream into a topic branch.&#10;#&#10;# Lines starting with '#' will be ignored, and an empty message aborts&#10;# the commit.&#10;defining the module relations">
-      <option name="closed" value="true" />
-      <created>1769526162823</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1769526162823</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add build logic &amp; convention plugins">
-      <option name="closed" value="true" />
-      <created>1769552757803</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1769552757803</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add build gradle relations setup">
-      <option name="closed" value="true" />
-      <created>1769552808431</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1769552808431</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add build gradle relations setup">
-      <option name="closed" value="true" />
-      <created>1769552902125</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1769552902125</updated>
     </task>
     <task id="LOCAL-00010" summary="Merge branch 'feature/setup-build-logic' into develop">
       <option name="closed" value="true" />
@@ -682,7 +806,55 @@
       <option name="project" value="LOCAL" />
       <updated>1770155276359</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Add refine to movie list paging load size">
+      <option name="closed" value="true" />
+      <created>1770156021707</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1770156021707</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Add movie source enum to separate between movie list and movie search list functionality">
+      <option name="closed" value="true" />
+      <created>1770216382674</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1770216382674</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Add testing related libraries">
+      <option name="closed" value="true" />
+      <created>1770216462251</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1770216462251</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Add offline first movie repo testing">
+      <option name="closed" value="true" />
+      <created>1770216554756</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1770216554756</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Add movie list viewmodel unit testing">
+      <option name="closed" value="true" />
+      <created>1770216668980</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1770216668980</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Add movie detail viewmodel unit testing">
+      <option name="closed" value="true" />
+      <created>1770216752012</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1770216752012</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -709,12 +881,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge branch 'feature/movie-caching-offline-first' into develop" />
-    <MESSAGE value="Add my api access token" />
-    <MESSAGE value="Add internet permission" />
-    <MESSAGE value="Add paging dependencies" />
-    <MESSAGE value="Add access token to http client factory" />
-    <MESSAGE value="Add paging remote mediator" />
     <MESSAGE value="Add search paging source" />
     <MESSAGE value="Add error handling &amp; convert throwable to ui text" />
     <MESSAGE value="Add debugging tree with timber" />
@@ -734,7 +900,18 @@
     <MESSAGE value="Add movie detail ui strings" />
     <MESSAGE value="Add vote count detail to the models" />
     <MESSAGE value="Add movie detail database setup and refine movie list dao" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add movie detail database setup and refine movie list dao" />
+    <MESSAGE value="Add refine to movie list paging load size" />
+    <MESSAGE value="Add movie source enum to separate between movie list and movie search list functionality" />
+    <MESSAGE value="Add testing related libraries" />
+    <MESSAGE value="Add offline first movie repo testing" />
+    <MESSAGE value="Add movie list viewmodel unit testing" />
+    <MESSAGE value="Add movie detail viewmodel unit testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add movie detail viewmodel unit testing" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MyMovies$OfflineFirstMovieRepositoryTest.ic" NAME="OfflineFirstMovieRepositoryTest Coverage Results" MODIFIED="1770210072901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/MyMovies$MovieDetailViewModelTest__1_.ic" NAME="MovieDetailViewModelTest (1) Coverage Results" MODIFIED="1770210040787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/MyMovies$MovieListViewModelTest__1_.ic" NAME="MovieListViewModelTest (1) Coverage Results" MODIFIED="1770209989608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
@@ -761,7 +938,7 @@
         </entry>
         <entry key="com.example.movie.database.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1769889237525" />
+            <CheckInfo lastCheckTimestamp="1770160285164" />
           </value>
         </entry>
         <entry key="com.example.movie.presentation.test">
