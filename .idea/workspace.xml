@@ -36,19 +36,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="Add movie detail viewmodel unit testing">
-      <change afterPath="$PROJECT_DIR$/.idea/androidTestResultsUserPreferences.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature/movie/presentation/src/androidTest/java/com/example/movie/presentation/MovieListScreenTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/checksums/sha1-checksums.bin" afterDir="false" />
+    <list default="true" id="46b2cce6-c215-4c2d-b1a1-c0528e8818e7" name="Changes" comment="Add movie list screen instrumentation/ui testing">
       <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/9.1.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/presentation/designsystem/src/androidTest/java/com/example/core/presentation/designsystem/ExampleInstrumentedTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/presentation/designsystem/src/androidTest/java/com/example/core/presentation/designsystem/ExampleInstrumentedTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -462,14 +455,6 @@
       <option name="presentableId" value="Default" />
       <updated>1769462003995</updated>
     </task>
-    <task id="LOCAL-00010" summary="Merge branch 'feature/setup-build-logic' into develop">
-      <option name="closed" value="true" />
-      <created>1769552993604</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1769552993604</updated>
-    </task>
     <task id="LOCAL-00011" summary="add result wrapper class for error handling">
       <option name="closed" value="true" />
       <created>1769555867687</created>
@@ -854,7 +839,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770216752012</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Add movie list screen instrumentation/ui testing">
+      <option name="closed" value="true" />
+      <created>1770216960825</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1770216960825</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -881,7 +874,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add search paging source" />
     <MESSAGE value="Add error handling &amp; convert throwable to ui text" />
     <MESSAGE value="Add debugging tree with timber" />
     <MESSAGE value="Add movie data models &amp; mappers" />
@@ -906,7 +898,8 @@
     <MESSAGE value="Add offline first movie repo testing" />
     <MESSAGE value="Add movie list viewmodel unit testing" />
     <MESSAGE value="Add movie detail viewmodel unit testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add movie detail viewmodel unit testing" />
+    <MESSAGE value="Add movie list screen instrumentation/ui testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add movie list screen instrumentation/ui testing" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyMovies$OfflineFirstMovieRepositoryTest.ic" NAME="OfflineFirstMovieRepositoryTest Coverage Results" MODIFIED="1770210072901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
