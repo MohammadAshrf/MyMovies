@@ -139,13 +139,13 @@ certification.lte=PG-13
 
 This project utilizes the Git Flow branching model:
 
-```bash main```: Production-ready code.
+``` main```: Production-ready code.
 
-```bash develop```: Integration branch for features.
+``` develop```: Integration branch for features.
 
-```bash feature/*```: Individual features (e.g., feature/caching, feature/search).
+``` feature/*```: Individual features (e.g., feature/caching, feature/search).
 
-```bash release/*```: Preparation for a new production release.
+``` release/*```: Preparation for a new production release.
 
 ---
 <div align="center">
